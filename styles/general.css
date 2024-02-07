@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 350px;
+    padding-right: 200px;
+    background-color: white;
+    display: flex;
+    background-color: lightskyblue;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: center; 
+}
+
+.middle-white-fill{
+    position: fixed;
+    top: 0;
+    left: 199px;
+    right: 199px;
+    border: 1px solid grey;
+    bottom: 0;
+    background-color: white;
+    z-index: 0;
+}
+
+
+@media (max-width: 1500px) {
+    body{
+        padding-right: 100px;
+        padding-left: 250px;
+    }
+    header{
+        left: 100px;
+        right: 100px;
+    }
+    .navbar{
+        left: 100px;
+    }
+    .middle-white-fill{
+        right: 99px;
+        left: 99px;
+    }
+}
+
+@media (max-width: 1050px) {
+    body{
+        padding-right: 0px;
+        padding-left: 150px;
+    }
+    header{
+        left: 0px;
+        right: 0px;
+    }
+    .navbar{
+        left: 0px;
+    }
+    .middle-white-fill{
+        right: 0px;
+        left: 0px;
+    }
+    .product-grid{
+        grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar{
+        display: none;
+        z-index: 100;
+        width: 100%;
+    }
+    body{
+        padding-left: 0px;
+        padding-top: 120px;
+    }
+    .header-logo-name, .header-input-button{
+        display: none;
+    }
+    .header-input-search{
+        display: block;
+    }
+    .product-grid{
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+    }
+    .mobile-filter-navbar{
+        display: block;
+    }
+    .product{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+    .js-cart-text{
+        display: none;
+    }
+}

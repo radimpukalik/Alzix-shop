@@ -1,0 +1,33 @@
+export const navbar = [{
+    name: "Electronics",
+    img: "img/navbar-items/electronics.svg",
+    value: "electronics",
+}, {
+    name: "Appliances",
+    img: "img/navbar-items/appliances.svg",
+    value: "appliances"
+}, {
+    name: "Gaming",
+    img: "img/navbar-items/gaming.svg",
+    value: "gaming"
+}, {
+    name: "Health",
+    img: "img/navbar-items/health.svg",
+    value: "health"
+}, {
+    name: "Books",
+    img: "img/navbar-items/books.svg",
+    value: "books"
+}, {
+    name: "Sport",
+    img: "img/navbar-items/sport.svg",
+    value: "sport"
+}, {
+    name: "Food",
+    img: "img/navbar-items/food.svg",
+    value: "food"
+}, {
+    name: "Pets",
+    img: "img/navbar-items/pets.svg",
+    value: "pets"
+}]

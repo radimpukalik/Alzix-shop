@@ -1,0 +1,124 @@
+.navbar{
+    width: 150px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 200px;
+    bottom: 0;
+    top: 66px;
+    z-index: 100;
+}
+
+.mobile-filter-navbar{
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 75px;
+    left: 10px;
+    right: 10px;
+    display: none;
+}
+.mobile-filter-navbar-button{
+    width: 100%;
+    background-color: #0094E7;
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-mobile-close-button{
+    background-color: #0094E7;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.navbar-item{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.navbar-item-img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.navbar-item-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.navbar-item-middle{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item-checkbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.navbar-price-filter-name{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.navbar-price-filter-input{
+    width: 125px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 2.5px;
+}
+.navbar-price-filter-limit{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nav-label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.navbar-price-filter-input::-webkit-outer-spin-button,
+.navbar-price-filter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

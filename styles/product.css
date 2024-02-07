@@ -1,0 +1,131 @@
+.product-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-left: 10px;
+    z-index: 10;
+    flex: 1;
+    padding-bottom: 150px;
+}
+
+.product {
+    background-color: white;
+    margin: 5px;
+    padding: 10px 10px 15px;
+    border-radius: 4px;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.15s ease-in-out;
+    margin: 0 auto;
+}
+
+
+.product:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.image-product{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.product-image-container{
+   width: 200px;
+   height: 180px;
+   object-fit: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.product-rating-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.product-rating-star-container{
+    flex: 6;
+    margin-right: 5px;
+}
+.product-rating-star-count{
+    flex: 1;
+    text-align: center;
+}
+.product-rating-rate-count{
+    flex: 1;
+    text-align: center;
+    color: #A4A4A4;
+}
+
+.product-name{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00275A;
+    flex: 1.5;
+}
+
+.product-prize{
+    flex: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E9242E;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.product-buy-button-container{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.product-added{
+    color: green;
+    font-size: 20px;
+    display: none;
+}
+
+.product-buy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-buy-button:hover{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.product-buy-button-img{
+    height: 70%;
+    object-fit: cover;
+    padding-right: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shantell+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <title>Alzix.com</title>
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+</head>
+<body>
+
+    <section class="middle-white-fill"></section>
+    <header class="header">
+        <div class="header-logo-container">
+            <img src="img/logo.jpg" class="header-logo-img">
+            <div class="header-logo-name"><span class="logo-blue">Alzix</span>.com</div>
+        </div>
+        <div class="header-input-container">
+            <input type="text" class="header-input" placeholder="What are you looking for ?">
+            <button class="header-input-button">Search</button>
+            <button class="header-input-search">
+                <img src="img/icons/search.svg" class="search-icon">
+            </button>
+        </div>
+        <a class="header-cart-container" href="checkout.html">
+            <div class="header-cart-container-button">
+                <div class="header-cart-text">
+                    <img src="img/icons/grocery-store.png" class="header-cart-img">
+                    <div class="product-buy-circle js-header-product-amount"></div>
+                </div>
+                <div class="js-cart-text">Cart</div>
+            </div>
+        </a>
+    </header>
+
+    <nav class="navbar">
+        <button class="navbar-mobile-close-button">Close filters</button>
+
+        <div class="js-navbar-items-grid">
+            <!-- JS navbar render -->
+        </div>
+
+        <div class="navbar-price-filter">
+            <div class="navbar-price-filter-name">Price filter</div>
+            <div class="navbar-price-filter-limit">Minimum</div>
+            <input type="number" class="navbar-price-filter-input js-filter-min">
+            <div class="navbar-price-filter-limit">Maximum</div>
+            <input type="number" class="navbar-price-filter-input js-filter-max">
+        </div>
+    </nav>
+
+    <div class="mobile-filter-navbar">
+        <button class="mobile-filter-navbar-button">Filters</button>
+    </div>
+
+    <main class="product-grid js-product-grid">
+        <!-- JS product render -->
+    </main>
+    
+    <script type="module" src="scripts/alzix.js"></script>
+</body>
+</html>
